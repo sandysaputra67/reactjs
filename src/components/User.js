@@ -20,8 +20,8 @@ const Todos = ({id,title, completed ,onDelete,OnEdit,onUpdate,onAdd}) => {
     return (
         <div class='list'>
   <HStack>
-  <Text fontSize='sm'>{title}  </Text>
-  <Text fontSize='sm'>{completed}  </Text>
+  <Text fontSize='xs'>{title}  </Text>
+  <Text fontSize='xs'>{completed}  </Text>
 </HStack>
             <span>
             <Button class="mr-1" onClick={add}>create</Button>

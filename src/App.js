@@ -18,11 +18,12 @@ const App = () => {
       .catch((err) => {
         console.log(err);
       });
+
   };
 
   const onAdd = async (title, Completed) => {
     await fetch("https://jsonplaceholder.typicode.com/todos", {
-      method: "GET",
+      method: "POST",
       body: JSON.stringify({
         title: title,
         completed: Completed
