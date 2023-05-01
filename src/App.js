@@ -70,8 +70,8 @@ const App = () => {
   
 
   const onEdit = async (id) => {
-    await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
-      method: "PUT",
+    await fetch(`https://jsonplaceholder.typicode.com/todos/posts}`, {
+      method: "POST",
     })
       .then((res) => {
         if (res.status !== 200) {
@@ -89,8 +89,8 @@ const App = () => {
       });
   };
   const onUpdate = async (id) => {
-    await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, {
-      method: "PUT",
+    await fetch(`https://jsonplaceholder.typicode.com/todos/posts/}`, {
+      method: "POST",
     })
       .then((res) => {
         if (res.status !== 200) {
